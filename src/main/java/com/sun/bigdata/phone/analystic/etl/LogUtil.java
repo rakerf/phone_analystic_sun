@@ -88,6 +88,7 @@ public class LogUtil {
         if(map.containsKey(Constants.LOG_IP)){
             IPUtil.RegionInfo info = IPUtil.getRegionInfoByIP(map.get(Constants.LOG_IP));
 
+
             //将解析后的地区信息存储到map中
             map.put(Constants.LOG_COUNTRY,info.getCountry());
             map.put(Constants.LOG_PROVINCE,info.getProvince());
